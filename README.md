@@ -6,7 +6,7 @@ Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-mar
 
 ## URL Match Pattern
 
-对于国际版, 请将 `@match` 地址改成 `https://ticktick.com/*`
+对于国际版, 请将 `@match` 地址改成 `https://ticktick.com/`
 
 ## How to use
 
