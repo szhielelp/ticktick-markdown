@@ -8,6 +8,7 @@
 // @grant        GM_addStyle
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js
+// @require      https://raw.githubusercontent.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js
 // @run-at       document-body
 // ==/UserScript==
 
@@ -38,12 +39,12 @@
         .rendered-markdown li,
         .rendered-markdown ol,
         .rendered-markdown ul {
-            list-style: inherit;
+            list-style: disc;
         }
 
         .rendered-markdown ol,
         .rendered-markdown ul {
-            padding-left: 0.5em;
+            padding-left: 1.2em;
             padding-right: 0.5em;
             padding-bottom: 0.5em;
         }
@@ -111,6 +112,10 @@
     // Options for the observer (which mutations to observe)
     const observerConfig = { childList: true, subtree: true };
 
+    const func_ToggleEdit = function(){
+
+    }
+
     // Callback function to execute when mutations are observed
     const callback = function(mutationsList) {
         for(const mutation of mutationsList) {
@@ -135,10 +140,10 @@
 
             // Render the editor-toggle button and register the click event
             if (editorNode.get(0) !== undefined && editorToggleNode.get(0) === undefined) {
-                editorToggleNode = jq(jq.parseHTML('<div class="editor-toggle line-right"><a>&#x1f589;</a></div>'));
+                editorToggleNode = jq(jq.parseHTML('<div class="editor-toggle line-right" title="Toggle Edit/Preview(F4)"><a>&#x1f589;</a></div>'));
                 toolbarNode.prepend(editorToggleNode);
 
-                jq('.editor-toggle a').click(function(e) {
+                jq(document).on('keydown', null, 'f4',function(e) {
                     const editorNode = jq('.editor-with-link', taskContentNode);
                     const renderedMarkdownNode = jq('.rendered-markdown', taskContentNode);
                     if (editorNode.is(':visible')) {
@@ -166,4 +171,6 @@
 
     // Later, you can stop observing
     //observer.disconnect();
+
+
 })();

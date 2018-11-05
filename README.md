@@ -2,16 +2,11 @@
 
 >实现滴答清单的 Markdown 支持的 Tampermonkey 插件
 
-
 Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-markdown/blob/master/TickTickMarkdown.user.js)
 
 ## URL Match Pattern
 
 对于国际版, 请将 `@match` 地址改成 `https://ticktick.com/*`
-
-## TODO
-
-- [ ] Hotkey to toggle edit/preivew
 
 ## How to use
 
@@ -19,6 +14,9 @@ Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-mar
 
 2. Add the script `TickTickMarkdown.user.js` to Tampermonkey.
 
+### Hotkey
+
+Press F4 to toggle Edit/Preview mode.
 
 ## How to use dev-mode script
 
