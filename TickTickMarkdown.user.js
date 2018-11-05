@@ -29,6 +29,11 @@
             padding-bottom: 2em;
         }
 
+        .rendered-markdown code {
+            background: lightgrey;
+            padding: 2px;
+        }
+
         .rendered-markdown * {
             line-height: 1.6;
 
