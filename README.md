@@ -1,6 +1,17 @@
-# MarkdownSupport
+# TickTickMarkdown
 
-Tampermonkey script for adding Markdown support to TickTick.
+>实现滴答清单的 Markdown 支持的 Tampermonkey 插件
+
+
+Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-markdown/blob/master/TickTickMarkdown.user.js)
+
+## URL Match Pattern
+
+对于国际版, 请将 `@match` 地址改成 `https://ticktick.com/*`
+
+## TODO
+
+- [ ] Hotkey to toggle edit/preivew
 
 ## How to use
 

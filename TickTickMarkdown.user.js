@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         TickTickMarkdown
 // @namespace    https://develcraft.com/
-// @version      0.1.0
+// @version      0.2
 // @description  Add markdown support to TickTick
-// @author       dan.keder@gmail.com
-// @match        https://ticktick.com/*
+// @author       szhshp
+// @match        https://dida365.com/*
 // @grant        GM_addStyle
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js
@@ -43,18 +43,25 @@
 
         .rendered-markdown ol,
         .rendered-markdown ul {
-            padding-left: 1.2em;
-            padding-right: 1.2em;
-            padding-bottom: 1.2em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
         }
 
         .rendered-markdown li p {
             padding: 0
         }
 
+        .rendered-markdown blockquote {
+            border-left: grey solid 5px;
+            padding-left: 1rem;
+            margin-inline-start: 1rem;
+            background: lightgrey;
+        }
+
         .rendered-markdown p {
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
         }
 
         .rendered-markdown h3,
