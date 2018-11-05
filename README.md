@@ -16,7 +16,7 @@ Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-mar
 
 ### Hotkey
 
-Press F4 to toggle Edit/Preview mode.
+F4 切换 Edit/Preview 模式.
 
 ## How to use dev-mode script
 
