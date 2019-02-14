@@ -29,11 +29,6 @@
             padding-bottom: 2em;
         }
 
-        .rendered-markdown code {
-            background: lightgrey;
-            padding: 2px;
-        }
-
         .rendered-markdown * {
             line-height: 1.6;
 
@@ -49,13 +44,15 @@
 
         .rendered-markdown ol,
         .rendered-markdown ul {
-            padding-left: 1.2em;
-            padding-right: 0.5em;
-            padding-bottom: 0.5em;
+            padding-left: 2em;
         }
 
         .rendered-markdown li p {
             padding: 0
+        }
+
+        .rendered-markdown code {
+            color: blue;
         }
 
         .rendered-markdown blockquote {
@@ -76,7 +73,6 @@
         .rendered-markdown h6 {
             color: #000;
             line-height: 1.8;
-            padding-bottom: 0.5em;
         }
 
         .rendered-markdown pre {
@@ -85,6 +81,33 @@
             background-color: #f4f4f4;
             padding: 0.5em;
             overflow: auto;
+        }
+
+        @media screen and (min-width: 800px) {
+          div#center-view {
+            right: 46%;
+          }
+
+          div#right-view {
+            width: 46%;
+            font-size: 60%!important;
+          }
+        }
+
+        .priority-low:not(.checked)  {
+            background: #17ffa433;
+        }
+
+        .priority-medium:not(.checked)  {
+            background: #ffc81752;
+        }
+
+        .priority-high:not(.checked)  {
+            background: #f144543b;
+        }
+
+        .task.active, .task.selected:hover {
+          border: 2px dashed #919090;
         }
     `;
     GM_addStyle(css);
@@ -145,7 +168,7 @@
 
             // Render the editor-toggle button and register the click event
             if (editorNode.get(0) !== undefined && editorToggleNode.get(0) === undefined) {
-                editorToggleNode = jq(jq.parseHTML('<div class="editor-toggle line-right" title="Toggle Edit/Preview(F4)"><a>&#x1f589;</a></div>'));
+                editorToggleNode = jq(jq.parseHTML('<div class="editor-toggle line-right"><a>&#x1f589;</a></div>'));
                 toolbarNode.prepend(editorToggleNode);
 
                 jq(document).on('keydown', null, 'f4',function(e) {
