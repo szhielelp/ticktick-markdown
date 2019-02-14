@@ -106,8 +106,12 @@
             background: #f144543b;
         }
 
+        .task.selected {
+            border: 2px solid grey;
+        }
+
         .task.active, .task.selected:hover {
-          border: 2px dashed #919090;
+            border: 1px solid grey;
         }
     `;
     GM_addStyle(css);
