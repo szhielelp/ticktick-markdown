@@ -84,7 +84,7 @@
         }
 
         @media screen and (min-width: 800px) {
-          div#center-view {
+          div.g-center {
             right: 46%;
           }
 
