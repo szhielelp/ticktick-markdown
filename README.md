@@ -1,4 +1,9 @@
+>Updated 2019.03.06: 滴答官方修改了网页端布局, 原本 fork 后的版本不通用了, 过两天我自己改一个
+
+
 # TickTickMarkdown
+
+
 
 >Tampermonkey 插件: 让**滴答清单** Chrome 插件实现 Markdown 支持 
 
