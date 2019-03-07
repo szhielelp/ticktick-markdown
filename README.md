@@ -1,15 +1,20 @@
->Updated 2019.03.06: 滴答官方修改了网页端布局, 原本 fork 后的版本不通用了, 过两天我自己改一个
+
+
 
 
 # TickTickMarkdown
-
 
 
 >Tampermonkey 插件: 让**滴答清单** Chrome 插件实现 Markdown 支持 
 
 使用效果: [http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html](http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html)
 
-Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-markdown/blob/master/TickTickMarkdown.user.js)
+>Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-markdown/blob/master/TickTickMarkdown.user.js)
+
+
+## Update History
+
+- 2019.03.06: 滴答官方修改了网页端布局, 原本的版本不通用了, 修改了预览部分的实现逻辑
 
 ## URL Match Pattern
 
