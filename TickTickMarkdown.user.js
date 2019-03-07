@@ -1,10 +1,7 @@
-// TODO: add styles, add hotkeys
-
-
 // ==UserScript==
 // @name         TickTickMarkdown
 // @namespace    https://develcraft.com/
-// @version      0.3
+// @version      0.5
 // @description  Add markdown support to TickTick
 // @author       szhshp
 // @match        https://dida365.com/*
@@ -20,47 +17,41 @@
 
   // CSS
   const css = `
-.editor-toggle {
-padding-left: 10px;
-}
-.editor-toggle a {
-color: #333;
-}
-.rendered-markdown {
+  
+.MDPreview {
 padding-bottom: 2em;
 }
-.rendered-markdown * {
+.MDPreview * {
 line-height: 1.6;
 -moz-user-select: text;
 -webkit-user-select: text;
 }
-.rendered-markdown li, .rendered-markdown ol, .rendered-markdown ul {
+.MDPreview li, .MDPreview ol, .MDPreview ul {
 list-style: disc;
 }
-.rendered-markdown ol, .rendered-markdown ul {
+.MDPreview ol, .MDPreview ul {
 padding-left: 2em;
 }
-.rendered-markdown li p {
+.MDPreview li p {
 padding: 0
 }
-.rendered-markdown code {
+.MDPreview code {
 color: blue;
 }
-.rendered-markdown blockquote {
+.MDPreview blockquote {
 border-left: grey solid 5px;
 padding-left: 1rem;
 margin-inline-start: 1rem;
 background: lightgrey;
 }
-.rendered-markdown p {
+.MDPreview p {
 padding-top: 0.5em;
 padding-bottom: 0.5em;
 }
-.rendered-markdown h3, .rendered-markdown h4, .rendered-markdown h5, .rendered-markdown h6 {
-color: #000;
+.MDPreview h3, .MDPreview h4, .MDPreview h5, .MDPreview h6 {
 line-height: 1.8;
 }
-.rendered-markdown pre {
+.MDPreview pre {
 font-family: monospace;
 border: 1px solid #ddd;
 background-color: #f4f4f4;
