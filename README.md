@@ -4,12 +4,17 @@
 
 # TickTickMarkdown
 
-
 >Tampermonkey 插件: 让**滴答清单** Chrome 插件实现 Markdown 支持 
 
-使用效果: [http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html](http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html)
-
 >Thanks to: [dankeder/ticktick-markdown](https://github.com/dankeder/ticktick-markdown/blob/master/TickTickMarkdown.user.js)
+
+## 使用效果
+使用指导: [http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html](http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html)
+
+
+
+
+
 
 
 ## Update History
