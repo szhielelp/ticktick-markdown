@@ -11,8 +11,11 @@
 ## 使用效果
 使用指导: [http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html](http://szhshp.org/dev/2018/11/05/markdownsupportfordidalist.html)
 
-
-
+-----
+![](   1.png   )
+-----
+![](   2.png   )
+-----
 
 
 
