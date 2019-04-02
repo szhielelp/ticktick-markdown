@@ -10,7 +10,6 @@
 ## LICENSE
 
 [![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-请共同参与抵抗 996 工作制, 祝所有 996 公司早日破产
 
 ## DESC
 
